@@ -1,5 +1,5 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
     "plugins": [
     ],
     "env": {
@@ -80,7 +80,7 @@
             2,
             {
                 "allowKeywords": true,
-                "allowPattern": "^([a-z]+(_[a-z]+)+)|[A-Z]+|[A-Z]{1}[a-z]+$" 
+                "allowPattern": "^([a-z]+(_[a-z]+)+)|[A-Z]+|[A-Z]{1}[a-z]+$"
             }
         ],
         "eqeqeq": 2,
@@ -218,16 +218,6 @@
             }
         ],
         "linebreak-style": 0,
-        "max-len": [
-            2,
-            200,
-            4,
-            {
-                "ignoreUrls": true,
-                "ignoreComments": false,
-                "ignorePattern": "^\\s*(const|let|var)\\s+\\w+\\s+\\=\\s+\\/.*\\/(|i|g|m|ig|im|gm|igm);?$"
-            }
-        ],
         "max-nested-callbacks": [
             2,
             4
@@ -271,10 +261,6 @@
                 "before": false,
                 "after": true
             }
-        ],
-        "semi": [
-            2,
-            "always"
         ],
         "keyword-spacing": 2,
         "space-before-blocks": 2,

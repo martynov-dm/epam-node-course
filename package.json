@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "nodemon — exec babel-node index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
     "@babel/node": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "eslint": "^8.0.1",
+    "eslint": "7.14.0",
     "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-joi-validation": "^5.0.0",
+    "joi": "^17.4.2",
+    "uuid": "^8.3.2"
   }
 }
