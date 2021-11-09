@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import { httpGetAllUsers, httpGetUserById, httpGetUsersSuggest, httpAddUser, httpUpdateUser, httpDeleteUser } from './users.controller.js';
-import { suggestQuerySchema, idParamsSchema, createUserSchema, validator } from '../../models/users.validation.js';
+import { suggestQuerySchema, idParamsSchema, createUserSchema, validator } from '../../models/user.validation.js';
 
 const usersRouter = Router()
 
